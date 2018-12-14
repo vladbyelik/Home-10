@@ -1,0 +1,81 @@
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.introducing {
+  padding: 106px 0 100px;
+}
+
+.members {
+  display: flex;
+}
+
+.musician {
+  width: 370px;
+  height: 470px;
+  background-image: url(../img/john-smith.png);
+  display: flex;
+  align-items: flex-end;
+}
+
+.official-apps {
+  background-image: url("../img/bgrnd-section.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .container {
+    padding: 80px 0 120px;
+  }
+}
+
+.text {
+    width: 370px;
+    height: 80px;
+    background-color: $top-color;
+  &:hover {
+    height: 130px;
+    transition: 0.5s;
+    .followers-appear {
+      display: flex;
+    }
+  }
+}
+
+.material .container, .popular-instagram .container {
+  display: flex;
+}
+
+.popular-instagram {
+  .container {
+    padding: 104px 0 85px;
+  }
+}
+
+.newsletter {
+  padding: 100px 0 70px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.subscribe {
+  width: 530px;
+  border-bottom: 4px solid #999999;
+  margin: 0 auto;
+}
+
+.name {
+  color: #ffffff;
+  font-family: Oswald, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.instrument {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Droid Sans";
+  font-size: 16px;
+}

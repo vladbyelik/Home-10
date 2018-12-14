@@ -1,0 +1,97 @@
+.red-square {
+  width: 35px;
+  height: 35px;
+  background-color: #df001f;
+  margin-left: 5px;
+}
+
+.accordionist {
+  background-image: url("../img/accordionist.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .container {
+    padding: 82px 0 ;
+  }
+}
+
+.right-squares {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  column-count: 3;
+}
+
+.introducing, .material, .popular-instagram {
+  h2 {
+    color: #333333;
+    font-family: Oswald, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 {
+    color: #df001f;
+    font-size: 32px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    margin: 0;
+  }
+}
+
+.followers-appear {
+  display: none;
+  align-items: center;
+  li {
+    padding-left: 50px;
+    text-align: center;
+  }
+  li:last-child {
+    padding: 0;
+  }
+}
+
+.stage-photo-one {
+  background-image: url(../img/uncoming-concert.png);
+  width: 270px;
+  height: 289px;
+}
+
+.stage-photo-two {
+  background-image: url(../img/latest-videos.png);
+  width: 372px;
+  height: 290px;
+}
+
+.concert .div {
+  display: flex;
+  align-items: center;
+}
+
+.concert-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  background-color: $top-color;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+}
+
+.triangle {
+  border: 12px solid transparent;
+  border-left: 20px solid #ffffff;
+  display: block;
+  width: 0;
+  height: 0;
+}
