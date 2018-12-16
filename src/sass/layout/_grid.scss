@@ -1,18 +1,20 @@
 .container {
   max-width: 1170px;
-//  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .introducing {
-  padding: 106px 0 100px;
+  padding: 106px 0 20px;
 }
 
 .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+
+
   @media (min-width: 1170px) {
     justify-content: space-between;
   }
@@ -62,8 +64,8 @@
   }
 }
 
-.material {
-  padding-bottom: 40px;
+.material .container {
+  padding: 40px 0;
 }
 
 .material .container {
@@ -74,6 +76,7 @@
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 97px 0 99px;
   }
 }
 
@@ -90,6 +93,7 @@
     @media (min-width: 1170px) {
       flex-direction: row;
       justify-content: space-between;
+      padding: 104px 0 91px;
     }
   }
 }
@@ -100,7 +104,7 @@
 }
 
 .subscribe {
-  width: 530px;
+  max-width: 530px;
   border-bottom: 4px solid #999999;
   margin: 0 auto;
 }
