@@ -2,13 +2,18 @@
   background-color: $top-color;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 0 50px;
-
   .link {
-    margin-left: 50px;
+    margin: 20px 0;
+  }
+
+  @media (min-width: 1320px) {
+    flex-direction: row;
   }
 }
+
 
 header {
   background-image: url(../img/guitarist-bgrnd.png);
@@ -44,9 +49,16 @@ header {
   }
 }
 
-nav ul {
+.menu {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (min-width: 680px) {
+    flex-direction: row;
+  }
+
   li a {
     color: #ffffff;
     font-family: "Droid Sans";
@@ -55,7 +67,7 @@ nav ul {
     line-height: 44px;
     text-transform: uppercase;
     letter-spacing: 0.65px;
-    padding-right: 50px;
+    padding: 0 25px;
   }
 }
 
@@ -83,11 +95,19 @@ nav ul {
 }
 
 .link-text {
+  color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
+
+.concert-info .link {
+  margin: 30px auto;
 }
 
 .followers {
@@ -95,11 +115,17 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   li {
-    padding-left: 50px;
+    padding: 0 25px;
     text-align: center;
+    span {
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
   }
-  li:last-child {
-    padding: 0;
-  }
+
 }
 
