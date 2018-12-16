@@ -15,7 +15,6 @@
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 .accordionist {
@@ -28,7 +27,7 @@
   }
   h2 {
     color: #ffffff;
-    font-family: Oswald;
+    font-family: Oswald, serif;
     font-size: 32px;
     font-weight: 500;
     text-transform: uppercase;
@@ -37,7 +36,7 @@
 
   h3 {
     color: #ffffff;
-    font-family: "Droid Sans - Regular";
+    font-family: "Droid Sans - Regular", serif;
     line-height: 50px;
     text-align: center;
     span {
@@ -115,14 +114,13 @@
   }
 }
 
-
 .followers-appear {
   display: none;
   li {
     padding: 17px;
     span {
       color: #ffffff;
-      font-family: "Open Sans";
+      font-family: "Open Sans", sans-serif;
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
@@ -134,6 +132,8 @@
   background-image: url(../img/uncoming-concert.png);
   width: 270px;
   height: 289px;
+  display: flex;
+  align-items: center;
 }
 
 .stage-photo-two {
@@ -173,7 +173,7 @@
 
   span {
     color: #333333;
-    font-family: "Droid Sans";
+    font-family: "Droid Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -186,14 +186,41 @@
   width: 60px;
   height: 60px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.triangle {
-  border: 12px solid transparent;
-  border-left: 20px solid #ffffff;
-  display: block;
-  width: 0;
-  height: 0;
+.newsletter h3 {
+  color: #282828;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.88px;
+  letter-spacing: 3.2px;
+}
+
+.icon-play {
+  margin: 0 auto;
+}
+
+.date {
+  margin: 0 auto;
+  .day {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 45px;
+    display: block;
+  }
+
+  .month {
+    color: #ffffff;
+    font-family: "Oswald - Heavy", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+  }
 }
 
 .videos {
@@ -212,7 +239,7 @@
 .official-apps {
   h2 {
     color: #ffffff;
-    font-family: Oswald;
+    font-family: Oswald, serif;
     font-size: 32px;
     font-weight: 500;
     line-height: 48px;

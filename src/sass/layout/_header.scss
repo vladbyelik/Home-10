@@ -8,12 +8,10 @@
   .link {
     margin: 20px 0;
   }
-
   @media (min-width: 1320px) {
     flex-direction: row;
   }
 }
-
 
 header {
   background-image: url(../img/guitarist-bgrnd.png);
@@ -54,14 +52,12 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-
   @media (min-width: 680px) {
     flex-direction: row;
   }
-
   li a {
     color: #ffffff;
-    font-family: "Droid Sans";
+    font-family: "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 700;
     line-height: 44px;
@@ -82,14 +78,14 @@ header {
 .link-style-red {
   background-color: $top-color;
   a {
-    font-family: "Droid Sans";
+    font-family: "Droid Sans", sans-serif;
     color: #ffffff;
   }
 }
 
 .link-style-white {
   a {
-    font-family: "Droid Sans";
+    font-family: "Droid Sans", sans-serif;
     color: $top-color;
   }
 }
@@ -126,6 +122,5 @@ header {
       text-transform: uppercase;
     }
   }
-
 }
 
