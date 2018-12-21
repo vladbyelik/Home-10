@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -15,4 +19,8 @@ ul {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+a {
+  color: #ffffff;
 }

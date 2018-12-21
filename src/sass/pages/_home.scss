@@ -3,6 +3,8 @@
   height: 35px;
   background-color: #df001f;
   margin-left: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .albums {
@@ -181,7 +183,7 @@
 }
 
 .circle {
-  background-color: $top-color;
+  background-color: $main-color;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -199,7 +201,7 @@
   letter-spacing: 3.2px;
 }
 
-.icon-play {
+.icon-play, .icon-left-open, .icon-right-open {
   margin: 0 auto;
 }
 

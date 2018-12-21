@@ -1,5 +1,5 @@
 .top {
-  background-color: $top-color;
+  background-color: $main-color;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -8,19 +8,38 @@
   .link {
     margin: 20px 0;
   }
+  nav {
+    order: 2;
+    @media (min-width: 1320px) {
+      order: 1;
+    }
+  }
   @media (min-width: 1320px) {
     flex-direction: row;
   }
 }
 
+h1 {
+  order: 1;
+  @media (min-width: 1320px) {
+    order: 2;
+  }
+}
+
 header {
-  background-image: url(../img/guitarist-bgrnd.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background: {
+    image: url(../img/guitarist-bgrnd.png);
+    repeat: no-repeat;
+    position: top;
+    size: cover;
+  }
 
   .link {
     margin: 0 auto;
+    order: 3;
+    @media (min-width: 1320px) {
+      order: 4;
+    }
   }
 
   .container {
@@ -29,7 +48,7 @@ header {
 
   h2 {
     margin: 0;
-    color: $top-color;
+    color: $main-color;
     font-family: "Oswald", sans-serif;
     font-size: 116px;
     text-transform: uppercase;
@@ -76,7 +95,7 @@ header {
 }
 
 .link-style-red {
-  background-color: $top-color;
+  background-color: $main-color;
   a {
     font-family: "Droid Sans", sans-serif;
     color: #ffffff;
@@ -86,7 +105,7 @@ header {
 .link-style-white {
   a {
     font-family: "Droid Sans", sans-serif;
-    color: $top-color;
+    color: $main-color;
   }
 }
 
@@ -110,9 +129,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
+  order: 4;
   li {
     padding: 0 25px;
     text-align: center;
+    white-space: nowrap;
     span {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
