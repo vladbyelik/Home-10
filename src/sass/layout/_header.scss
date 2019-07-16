@@ -10,18 +10,18 @@
   }
   nav {
     order: 2;
-    @media (min-width: 1320px) {
+    @media (min-width: 1500px) {
       order: 1;
     }
   }
-  @media (min-width: 1320px) {
+  @media (min-width: 1500px) {
     flex-direction: row;
   }
 }
 
 h1 {
   order: 1;
-  @media (min-width: 1320px) {
+  @media (min-width: 1500px) {
     order: 2;
   }
 }
@@ -37,7 +37,7 @@ header {
   .link {
     margin: 0 auto;
     order: 3;
-    @media (min-width: 1320px) {
+    @media (min-width: 1500px) {
       order: 4;
     }
   }
@@ -50,7 +50,7 @@ header {
     margin: 0;
     color: $main-color;
     font-family: "Oswald", sans-serif;
-    font-size: 116px;
+    font-size: 8rem;
     text-transform: uppercase;
     text-align: center;
   }
@@ -58,7 +58,7 @@ header {
   h3 {
     color: #333333;
     font-family: "Great Vibes", cursive;
-    font-size: 80px;
+    font-size: 6rem;
     font-weight: 400;
     line-height: 160.5px;
     text-align: center;
@@ -77,7 +77,7 @@ header {
   li a {
     color: #ffffff;
     font-family: "Droid Sans", sans-serif;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 44px;
     text-transform: uppercase;
@@ -87,11 +87,14 @@ header {
 }
 
 .link {
-  width: 200px;
-  height: 50px;
+  width: 13rem;
+  height: 3rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .link-style-red {
@@ -111,14 +114,12 @@ header {
 
 .link-text {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   text-align: center;
-  display: block;
-  padding-top: 10px;
 }
 
 .concert-info .link {
@@ -138,9 +139,9 @@ header {
     span {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 3rem;
       text-transform: uppercase;
     }
   }

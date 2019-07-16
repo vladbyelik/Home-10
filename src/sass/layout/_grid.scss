@@ -1,26 +1,33 @@
 .introducing {
   padding: 106px 0 20px;
+  .container {
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 5rem;
+  }
 }
 
 .members {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-
-
-
+  flex-direction: column;
+  .musician {
+    margin: 15px auto 0;
+  }
   @media (min-width: 1170px) {
+    flex-direction: row;
     justify-content: space-between;
+  }
+  .musician {
+    //margin: 0;
   }
 }
 
 .musician {
-  max-width: 370px;
+  max-width: 23rem;
   width: 100%;
-  height: 470px;
+  height: 30rem;
   display: flex;
   align-items: flex-end;
-  margin-top: 15px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,8 +64,9 @@
 
 .text {
   width: 100%;
-  height: 80px;
+  height: 6rem;
   background-color: $main-color;
+  transition: 0.5s;
   &:hover {
     height: 130px;
     transition: 0.5s;
@@ -80,7 +88,7 @@
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 97px 0 99px;
+    padding: 4rem 0 7rem;
   }
 }
 
@@ -90,7 +98,7 @@
 
 .popular-instagram {
   .container {
-    padding: 30px 15px 10px;
+    padding: 5rem 15px 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +107,12 @@
       justify-content: space-between;
       padding: 104px 0 91px;
     }
+  }
+}
+
+@media (max-width: 1170px) {
+  .feed {
+    margin-top: 3rem;
   }
 }
 
@@ -137,10 +151,10 @@
 .name {
   color: #ffffff;
   font-family: Oswald, sans-serif;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 20px;
-  padding: 27px 0 0 17px;
+  padding: 27px 0 5px 17px;
   display: block;
 }
 
