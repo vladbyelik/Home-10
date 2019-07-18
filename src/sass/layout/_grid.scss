@@ -3,27 +3,30 @@
   .container {
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 5rem;
+    overflow: hidden;
+  }
+  @media (max-width: 1200px) {
+    .container {
+      width: 405px;
+    }
   }
 }
 
 .members {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   .musician {
-    margin: 15px auto 0;
+    margin: 0 45px 0 0;
   }
-  @media (min-width: 1170px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .musician {
-    //margin: 0;
+  @media (max-width: 1200px) {
+    .musician {
+      margin: 0 22.5px;
+    }
   }
 }
 
 .musician {
-  max-width: 23rem;
+  max-width: 360px;
   width: 100%;
   height: 30rem;
   display: flex;
@@ -44,6 +47,18 @@
 
 .guitar {
   background-image: url(../img/renes-odim.png);
+}
+
+.string {
+  background-image: url(../img/strings-crop.jpg);
+}
+
+.piano {
+  background-image: url(../img/piano.jpg);
+}
+
+.bass {
+  background-image: url(../img/bass.jpg);
 }
 
 .official-apps {

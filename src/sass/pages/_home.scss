@@ -72,7 +72,7 @@
   display: flex;
   justify-content: center;
   padding: 5px 0;
-  @media (min-width: 1170px) {
+  @media (min-width: 1200px) {
     justify-content: flex-end;
   }
 
@@ -119,7 +119,7 @@
 
 .introducing h2, .introducing h3, .material h2, .material h3, .popular-instagram h2,
 .popular-instagram h3 {
-  @media (min-width: 1170px) {
+  @media (min-width: 1200px) {
     text-align: left;
   }
 }

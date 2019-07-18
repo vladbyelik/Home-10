@@ -1,1 +1,27 @@
 $main-color: #df001f;
+
+
+@media (max-width: 1200px) {
+
+}
+
+#members {
+  width: 2430px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  //@media (max-width: 1200px) {
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  }
+
+.musician {
+  float: left;
+}
+
+#members::after {
+  content: "";
+  display: block;
+  clear: both;
+}
