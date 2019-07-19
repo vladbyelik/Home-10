@@ -1,81 +1,70 @@
-// slider !!
+// slider for members of group
 
-// let images = document.querySelectorAll('.musician');
-// let current = 0;
-//
-// function slider () {
-//   for (let i = 0; i < images.length; i++) {
-//     images[i].classList.add('opacity0');
-//   }
-//   images[current].classList.remove('opacity0');
-// }
-//
-// slider();
-//
-// document.querySelector('.up').onclick = function() {
-//   if (current - 1 == -1) {
-//     current = images.length - 1;
-//   }
-//   else {
-//     current--;
-//   }
-//   slider();
-// }
-//
-// document.querySelector('.down').onclick = function() {
-//   if (current + 1 == images.length) {
-//     current = 0;
-//   }
-//   else {
-//     current++;
-//   }
-//   slider();
-// };
-
-////////////////////////////////////////////////////////////////////
+const onKeyDown = (ev) => {
+  if (ev.keyCode === 39) sliderRight();
+  if (ev.keyCode === 37) sliderLeft();
+}
 
 document.getElementById('left').onclick = sliderLeft;
 document.getElementById('right').onclick = sliderRight;
+document.addEventListener('keydown', onKeyDown)
 
-var left = 0;
+let move = 0;
+let members = document.getElementById('members');
 
 function sliderLeft () {
-  var polosa = document.getElementById('members');
-  left += 405;
-  if (left > 0) {
-    left = -1215;
+  move += 405;
+  if (move > 0) {
+    move = -1215;
+    if(window.innerWidth <= 1200) {
+      move = -2025;
+    }
   }
-  polosa.style.left = left +'px';
+  members.style.left = move +'px';
 }
-
 
 function sliderRight () {
-  var polosa = document.getElementById('members');
-  left -= 405;
-  if (left < -1215) {
-    left = 0;
+  move -= 405;
+  if(window.innerWidth <= 1200) {
+    if (move < -2025) {
+      move = 0;
+    }
+  } else {
+    if (move < -1215) {
+      move = 0;
+    }
   }
-  polosa.style.left = left +'px';
+  members.style.left = move +'px';
 }
 
+// slider for video content
 
+let videos = document.querySelectorAll('.stage-video');
+let current = 0;
 
-// window.addEventListener("resize", function() {
-//   if (window.matchMedia("(min-width: 1200px)").matches) {
-//
-//     console.log("условие на большой экран");
-//
-//   } else {
-//
-//     console.log("условие на small экран");
-//   }
-// });
+function sliderVideo () {
+  for (let i = 0; i < videos.length; i++) {
+    videos[i].classList.add('d-none');
+  }
+  videos[current].classList.remove('d-none');
+}
 
-// if(window.innerWidth >= 1200) {
-//
-// } else {
-//   left += 105;
-//   if (left > 0) {
-//     left = -1215;
-//   }
-// }
+sliderVideo();
+
+document.querySelector('.left-video').onclick = function() {
+  if (current - 1 === -1) {
+    current = videos.length - 1;
+  } else {
+    current--;
+  }
+  sliderVideo();
+};
+
+document.querySelector('.right-video').onclick = function() {
+  if (current + 1 === videos.length) {
+    current = 0;
+  } else {
+    current++;
+  }
+  sliderVideo();
+};

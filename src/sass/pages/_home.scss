@@ -5,10 +5,11 @@
   margin-left: 5px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .albums {
-  max-width: 370px;
+  max-width: 23rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -147,13 +148,33 @@
   align-items: center;
 }
 
-.stage-photo-two {
-  background-image: url(../img/latest-videos.png);
+.video {
+  padding-top: 50px;
+  position: relative;
+  @media (min-width: 1200px) {
+    padding-top: 0;
+  }
+}
+
+.video-content {
   max-width: 100%;
   width: 23rem;
   height: 18rem;
+  position: relative;
+  .d-none {
+    display: none;
+  }
+}
+
+.stage-video iframe {
+  max-width: 100%;
+  width: 23rem;
+  height: 18rem;
+}
+
+.stage-video {
+  position: absolute;
   display: flex;
-  align-items: center;
 }
 
 .concert .div {
@@ -233,13 +254,6 @@
     font-weight: 400;
     letter-spacing: 3.2px;
     text-align: center;
-  }
-}
-
-.videos {
-  padding-top: 50px;
-  @media (min-width: 1200px) {
-    padding-top: 0;
   }
 }
 
