@@ -1,36 +1,42 @@
 // slider for members of group
 
-const onKeyDown = (ev) => {
-  if (ev.keyCode === 39) sliderRight();
-  if (ev.keyCode === 37) sliderLeft();
-}
+// document.addEventListener('keydown', onKeyDown)
+// const onKeyDown = (ev) => {
+//   if (ev.keyCode === 39) sliderRight();
+//   if (ev.keyCode === 37) sliderLeft();
+// }
 
 document.getElementById('left').onclick = sliderLeft;
 document.getElementById('right').onclick = sliderRight;
-document.addEventListener('keydown', onKeyDown)
 
 let move = 0;
 let members = document.getElementById('members');
+let musicians = document.getElementsByClassName('musician'); //весь массив из музыкантов по классам
+let musiciansSum = document.getElementsByClassName('musician').length; // количество блоков с музыкантами (6)
+const musicianWidth = musicians[0].offsetWidth + 45; // ширина 1го блока с отступами 45px (405)
+
+let membersWidth = musicianWidth * musiciansSum;
+members.style.width = membersWidth +'px';
 
 function sliderLeft () {
-  move += 405;
+  move += musicianWidth;
   if (move > 0) {
-    move = -1215;
+    move = -(membersWidth - (musicianWidth * 3));
     if(window.innerWidth <= 1200) {
-      move = -2025;
+      move = -membersWidth + musicianWidth;
     }
   }
   members.style.left = move +'px';
 }
 
 function sliderRight () {
-  move -= 405;
+  move -= musicianWidth;
   if(window.innerWidth <= 1200) {
-    if (move < -2025) {
+    if (move < -(membersWidth - musicianWidth)) {
       move = 0;
     }
   } else {
-    if (move < -1215) {
+    if (move < -(membersWidth - (musicianWidth * 3))) {
       move = 0;
     }
   }
