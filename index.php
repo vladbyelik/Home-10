@@ -231,6 +231,9 @@
                     <div class="stage-video">
                         <iframe src="https://www.youtube.com/embed/O2df4qzDnUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <div class="stage-video">
+                        <iframe src="https://www.youtube.com/embed/ybikwYRVZbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
